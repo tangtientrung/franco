@@ -1,0 +1,535 @@
+/*------------------------------------------------------------------
+  [Table of contents]
+    1 Define
+    2 Base
+      2.1 Header
+      2.2 Menu
+      2.3 Banner
+      2.4 Product
+      2.5 Slider
+      2.6 Footer
+    3 Responsive & Import
+      3.1 Responsive
+      3.2 Import
+-------------------------------------------------------------------*/
+
+
+/* 1 Define standard variables and values for website */
+@head-bg-color                : #222;
+@head-color                   : #525252;
+@menu-color                   : #000;
+@bg-color-btnshop             : #8262b5;
+@color-btnshop                : #fff;
+@menu-hover-color             : #8262b5;
+@banner-title-color           : #000;
+@banner-name-color            : #616161;
+@product-infor-color          : #000;
+@product-name-hover-color     : #8262b5;
+@product-finalprice-color     : #8262b5;
+@introduce-title-color        : #000;
+@introduce-title-hover-color  : #8262b5;
+@introduce-desc-color         : #424242;
+@owl-theme-color              : purple;
+@footer-title-color           : #f7f7f7;
+@footer-underline-color       : #fefeff;
+@footer-content-color         : #888;
+@footer-total-color           : #888;
+@footer-copyright-color       : #888;
+@footer-company-color         : #fff;
+@footer-middle-underline-color: #888;
+@btnaddcart-color             : #424242;
+@btnaddcart-bg-color          : #fff;
+@btnaddcart-hover-color       :#8262b5;
+@introduce-article-color      : #8262b5;
+@introduce-underline-color    : #8262b5;
+@anone-color                  : #525252;
+@anone-hover-color            : #000;
+@a-color                      : #888;
+@a-hover-color                : white;
+@iconheart-color              : red;
+@star-yellow-color            : #f8ba04;
+@star-black-color             : #d1d1d1;
+@menu-bg-color                : #fff;
+@coat-bg-color                : #000;
+
+/* 2 Base */
+body {
+  margin       : 0;
+  //font-family: main-font;
+}
+
+.coat {
+  width           : 100%;
+  height          : 100%;
+  background-color: @coat-bg-color;
+  position        : fixed;
+  z-index         : 98;
+  opacity         : 0;
+  .transition(all, 1s);
+  display: none
+}
+
+.coat.active {
+  opacity: .6;
+  display: block;
+}
+
+/*2.1 Header */
+.header {
+  background-color: @head-bg-color;
+  color           : @head-color;
+  font-size       : 14px;
+  line-height     : 45px;
+  height          : 45px;
+  font-family     : font-header;
+
+  &__left {
+    text-align    : left;
+    padding-left  : 30px;
+    letter-spacing: 1px;
+  }
+
+  &__center {
+    text-align: right;
+
+    &__left {
+      padding-right: 38px;
+    }
+
+    &__right {
+      padding-right: 25px;
+    }
+  }
+}
+
+/*2.2 Menu */
+.main-menu {
+  position     : relative;
+  border-bottom: 1px solid #525252;
+  color        : @menu-color;
+  font-family  : main-font-bold;
+
+  &__logo {
+    position   : absolute;
+    top        : 0;
+    padding-top: 20px;
+    margin-left: 30px;
+  }
+
+  &__icon {
+    position   : absolute;
+    top        : 0;
+    right      : 0;
+    line-height: 80px;
+
+    &__heart {
+      margin-right: 50px;
+    }
+
+    &__cart {
+      margin-right: 35px;
+    }
+  }
+}
+
+.menu {
+  padding-left: 115px;
+}
+
+.menu ul {
+  margin: 0;
+}
+
+.menu ul li {
+  float          : left;
+  display        : block;
+  text-align     : center;
+  text-decoration: none;
+  color          : @menu-color;
+  line-height    : 80px;
+  font-weight    : 700;
+  padding-right  : 54px;
+}
+
+.menu a:hover {
+  color: @menu-hover-color;
+
+}
+
+.menu a.active {
+  color: @menu-hover-color;
+}
+
+.icon {
+  display: none;
+}
+
+
+/*2.3 Banner */
+.banner {
+  margin-top: 30px;
+  position  : relative;
+
+  &--position {
+    position: absolute;
+    top     : 0;
+  }
+
+  &__left {
+    &__img {
+      width: 100%;
+    }
+
+    &__title {
+      font-size   : 30px;
+      color       : @banner-title-color;
+      font-weight : 400;
+      font-family : pacifico;
+      padding-top : 315px;
+      padding-left: 335px;
+    }
+
+    .btn-shop {
+      margin-left: 550px;
+    }
+  }
+
+  &__right {
+    &__top {
+      &__img {
+        width: 100%;
+      }
+
+      &__name {
+        font-size     : 16px;
+        letter-spacing: 3px;
+        color         : @banner-name-color;
+        font-weight   : 400;
+        font-family   : main-font;
+        padding-top   : 85px;
+        padding-left  : 57px;
+      }
+
+      &__title {
+        font-size     : 19px;
+        letter-spacing: 1px;
+        color         : @banner-title-color;
+        font-weight   : 400;
+        font-family   : main-font-bold;
+        padding-left  : 57px;
+        margin-top    : -14px;
+      }
+    }
+
+    &__bottom {
+      padding-top: 30px;
+
+      &__img {
+        width: 100%;
+      }
+
+      &__name {
+        font-size     : 16px;
+        letter-spacing: 3px;
+        color         : @banner-name-color;
+        font-weight   : 400;
+        font-family   : main-font-bold;
+        padding-left  : 39px;
+        padding-top   : 148px;
+      }
+
+      &__title {
+        font-size     : 19px;
+        letter-spacing: 1px;
+        color         : @banner-title-color;
+        font-weight   : 400;
+        font-family   : main-font-bold;
+        padding-left  : 39px;
+        margin-top    : -10px;
+      }
+
+      .btn-shop {
+        margin-left: 42px;
+        margin-top : 3px;
+      }
+    }
+  }
+}
+
+
+/* 2.4 Product */
+
+.product {
+  padding-top: 77px;
+
+  .introduce {
+    &__title {
+      //margin-top: -7px;
+      margin-left: -1px;
+    }
+
+    &__title {
+      margin-top: -3px;
+    }
+
+    &__underline {
+      margin-top: 20px;
+    }
+  }
+
+  &__detail {
+    margin-top   : 50px;
+    margin-bottom: 28px;
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  &__infor {
+    padding-top: 15px;
+    max-height : 130px;
+    font-family: main-font;
+    color      : @product-infor-color;
+
+    &__name:hover {
+      color: @product-name-hover-color;
+    }
+
+    &__star {
+      font-size   : 13px;
+      padding-top : 8px;
+      padding-left: 5px;
+    }
+
+    &__price {
+      padding-top: 5px;
+
+      &__final {
+        color: @product-finalprice-color;
+      }
+    }
+  }
+}
+
+.item {
+  padding-bottom: 43px;
+  position      : relative;
+}
+
+.btn-add-cart {
+  margin-left: 5px;
+  margin-top : 278px;
+}
+
+/* 2.5 Slider */
+
+.slider {
+  margin-top      : 5px;
+  background-image: url('../image/slider.jpg');
+  width           : 100%;
+
+  .introduce {
+    &--center {
+      margin-top: 75px;
+      text-align: center;
+    }
+
+    &__article {
+      margin-left: 17px;
+    }
+
+    &__title {
+      margin-top : 0;
+      margin-left: -7px;
+    }
+
+    &__underline {
+      margin    : 0 auto;
+      margin-top: 20px;
+    }
+  }
+
+  &__main-slider {
+    margin-top   : 12px;
+    margin-bottom: 33px;
+
+    .item {
+      margin-left : 12px;
+      margin-right: 10px;
+      position    : relative;
+      margin-top  : 37px;
+    }
+
+    &__image {
+      width: 100%;
+    }
+
+    &__title {
+      position    : absolute;
+      left        : 0;
+      top         : 0;
+      padding-top : 219px;
+      padding-left: 20px;
+      font-size   : 16px;
+      line-height : 20px;
+      color       : @introduce-title-color;
+      font-weight : 400;
+      font-family : main-font;
+    }
+
+    &__title:hover {
+      color: @introduce-title-hover-color;
+    }
+
+    &__desc {
+      position    : absolute;
+      left        : 0;
+      top         : 0;
+      padding-top : 254px;
+      padding-left: 20px;
+      font-size   : 14px;
+      line-height : 22px;
+      color       : @introduce-desc-color;
+      font-weight : 400;
+      font-family : main-font;
+    }
+
+    &__social {
+      position    : absolute;
+      left        : 0;
+      top         : 0;
+      padding-left: 20px;
+      padding-top : 354px;
+
+      &__comment {
+        padding-right: 35px;
+      }
+    }
+  }
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+  background-color: @owl-theme-color;
+}
+
+/*2.6 Footer */
+.footer-title {
+  font-size     : 16px;
+  letter-spacing: 1px;
+  line-height   : 22px;
+  color         : @footer-title-color;
+  font-weight   : 400;
+  font-family   : main-font;
+}
+
+.footer-underline {
+  margin-top      : 23px;
+  width           : 100%;
+  height          : 1px;
+  background-color: @footer-underline-color;
+}
+
+
+
+
+
+.footer {
+  background-image: url('../image/footer.jpg');
+  width           : 100%;
+  height          : 100%;
+  padding-top     : 60px;
+
+  &__top {
+    &__about {
+      &__content {
+        width      : 248px;
+        height     : 120px;
+        font-size  : 14px;
+        line-height: 22px;
+        color      : @footer-content-color;
+        font-weight: 400;
+        margin-top : 24px;
+      }
+
+      &__icon {
+        color     : @footer-content-color;
+        margin-top: 27px;
+
+        &__i {
+          margin-right: 30px;
+        }
+      }
+    }
+
+    &__location {
+
+      //width: 210px;
+      &__total {
+        width      : 100%;
+        font-size  : 14px;
+        line-height: 34px;
+        color      : @footer-total-color;
+        font-weight: 400;
+        padding-top: 21px;
+      }
+
+      &__detail {
+        padding-left: 5px;
+      }
+    }
+
+    &__navigation {
+      .row {
+        .col-sm-4 {
+          .ul-left {
+            margin-left: -41px;
+            padding-top: 21px;
+          }
+        }
+
+        .col-sm-8 {
+          .ul-right {
+            margin-left: -7px;
+            padding-top: 21px;
+          }
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    height     : 70px;
+    line-height: 70px;
+
+    &__copyright {
+      color: @footer-copyright-color;
+
+      &__company {
+        color: @footer-company-color;
+      }
+    }
+
+    &__paymentmethod {
+      padding-left: 222px;
+    }
+  }
+}
+
+.footer-middle-underline {
+  width           : 100%;
+  height          : 1px;
+  background-color: @footer-middle-underline-color;
+  margin-top      : 30px;
+}
+
+
+
+/* 3 Responsive & Import */
+
+/* 3.1 Responsive */
+@import "responsive.less";
+
+/* 3.2 Import */
+@import "font.less";
+@import "reuse.less";
