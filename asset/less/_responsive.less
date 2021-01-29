@@ -1,69 +1,88 @@
+//screen 1200->1365
+@media (min-width: 1200px) and (max-width: 1365px) {
+    .header {
+        &__center {
+            padding-right: 30px;
+            &__left {
+                padding-right: 20px;
+            }
+        
+            &__right {
+                padding-right: 0px;
+            }
+        }
+    }
+    .menu {
+        padding-left: 250px;
+    }
+    .menu ul li {
+        padding-right: 30px;
+    }
+    .main-menu {
+        &__logo {
+          position: absolute;
+          top: 0;
+          padding-top: 20px;
+          margin-left: 30px;
+        }
+        &__icon {
+            &__heart {
+                margin-right: 20px;
+            }
+        }
+      }
+}
+
+//screen < 1199
 @media (max-width: 1199px) {
     .main-menu {
-        height: 50px;
-
+        height: 80px;
         .active {
             transform: translateX(0);
         }
-
         &__icon {
-            padding-top : 0;
-            line-height : 50px;
-            margin-right: 10px;
-            float       : right;
-
+            padding-top: 0;
+            float: right;
             &__heart {
-                margin-right: 0px;
-            }
-
-            &__cart {
-                margin-right: 0px;
+                margin-right: 10px;
             }
         }
-
         &__logo {
-            position   : absolute;
-            top        : 0;
-            padding-top: 5px;
-            margin-left: 10px;
+            position: absolute;
+            top: 0;
+            margin-left: 39%;
         }
     }
-
     .menu {
         transform: translateX(-100%);
         .transition(all, .5s);
-        position        : fixed;
-        height          : 100%;
+        position: fixed;
+        height: 100%;
         background-color: @menu-bg-color;
-        z-index         : 99;
-        top             : 0;
-        left            : 0;
-        padding-left    : 30px;
-
+        z-index: 99;
+        top: 0;
+        left: 0;
+        padding-left: 30px;
         ul {
             margin-top: 30px;
-
             li {
-                float        : none;
-                line-height  : unset;
+                float: none;
+                line-height: unset;
                 margin-bottom: 30px;
-                text-align   : left;
+                text-align: left;
             }
         }
-
         a {
             display: block;
-            clear  : both;
+            clear: both;
         }
     }
-
     a.icon {
-        float       : right;
-        display     : block;
-        line-height : 50px;
-        margin-right: 50px;
+        float: left;
+        display: block;
+        line-height: 80px;
+        font-size: 30px;
     }
-
     .footer {
         &__bottom {
             &__paymentmethod {
@@ -71,23 +90,20 @@
             }
         }
     }
-
 }
 
-
+//screen 992->1199
 @media (min-width: 992px) and (max-width: 1199px) {
     .banner {
         &__left {
             &__title {
-                padding-top : 315px;
+                padding-top: 315px;
                 padding-left: 290px;
             }
-
             .btn-shop {
                 margin-left: 450px;
             }
         }
-
         &__right {
             &__top {
                 &__name {
@@ -96,59 +112,31 @@
             }
         }
     }
-
-    .btn-add-cart {
-        margin-top: 215px;
-    }
-
     .product {
         &__infor {
             text-align: center;
         }
     }
-
-    .slider {
-        &__main-slider {
-            &__title {
-                padding-top : 180px;
-                padding-left: 20px;
-            }
-
-            &__desc {
-                padding-top : 200px;
-                padding-left: 20px;
-                font-size   : 12px;
-
-            }
-
-            &__social {
-                padding-left: 20px;
-                padding-top : 270px;
-            }
-        }
-    }
 }
 
+//screen < 991
 @media (max-width:991px) {
     .header {
         &--left {
             padding-left: 0px;
-            display     : none;
+            display: none;
         }
 
         &--center {
             text-align: left;
-
             &--left {
                 padding-left: 0px;
             }
         }
     }
-
     .product {
         text-align: center;
     }
-
     .product {
         .introduce {
             &__underline {
@@ -158,79 +146,67 @@
     }
 }
 
+//screen 768->991
 @media (min-width: 768px) and (max-width: 991px) {
     .header {
         &__left {
-            padding-left  : 0;
+            padding-left: 15px;
             letter-spacing: 1px;
         }
     }
-
     .banner {
         &__left {
             &__title {
-                font-size   : 24px;
-                font-weight : 400;
-                font-family : pacifico;
-                padding-top : 210px;
+                font-size: 24px;
+                font-weight: 400;
+                font-family: pacifico;
+                padding-top: 210px;
                 padding-left: 190px;
             }
-
             .btn-shop {
                 margin-left: 250px;
             }
         }
-
         &__right {
             &__top {
                 &__name {
-                    font-size     : 12px;
+                    font-size: 12px;
                     letter-spacing: 3px;
-                    font-weight   : 400;
-                    font-family   : main-font;
-                    padding-top   : 50px;
-                    padding-left  : 60px;
+                    font-weight: 400;
+                    font-family: main-font;
+                    padding-top: 50px;
+                    padding-left: 60px;
                 }
-
                 &__title {
-                    font-size     : 16px;
+                    font-size: 16px;
                     letter-spacing: 1px;
-                    font-weight   : 400;
-                    font-family   : main-font;
-                    padding-left  : 39px;
-                    padding-top   : -3px;
-                    font-style    : bold;
+                    font-weight: 400;
+                    font-family: main-font;
+                    padding-left: 39px;
+                    padding-top: -3px;
+                    font-style: bold;
                 }
             }
-
             &__bottom {
                 &__name {
-                    font-size   : 16px;
+                    font-size: 16px;
                     padding-left: 5px;
-                    padding-top : 100px;
+                    padding-top: 100px;
                 }
-
                 &__title {
-                    font-size   : 19px;
+                    font-size: 19px;
                     padding-left: 5px;
-                    margin-top  : -3px;
-                    font-style  : bold;
+                    margin-top: -3px;
+                    font-style: bold;
                 }
-
                 .btn-shop {
                     margin-left: 10px;
                 }
             }
         }
     }
-
-    .btn-add-cart {
-        margin-top: 380px;
-    }
-
     .product {
         padding-top: 30px;
-
         &__name {
             height: 50px;
         }
@@ -247,7 +223,6 @@
                 text-align  : right;
             }
         }
-
         &__location {
             &__detail {
                 margin: 0;
@@ -256,12 +231,19 @@
     }
 }
 
+//screen <767
 @media (max-width: 767px) {
-    .header {
-        &__left {
-            display: none;
-        }
+.header {
+    &__left {
+        text-align: center;
+        margin: 0;
+        padding: unset;
     }
+    &__center {
+        text-align: center;
+        margin: 0;
+    }
+}
 
     .banner {
         &__right {
@@ -272,7 +254,10 @@
     }
 
     .product {
-        text-align: center;
+        &__infor {
+            margin: 0 auto;
+        }
+        
     }
 
     .footer-middle-underline {
@@ -283,67 +268,55 @@
         &__top {
             &__about {
                 text-align: center;
-
                 &__content {
                     text-align: center;
-                    width     : 100%;
+                    width: 100%;
                 }
-
                 &__icon {
                     margin-top: -35px;
                 }
             }
-
             &__navigation {
                 margin-top: 30px;
                 text-align: center;
-
                 .row {
                     .col-sm-4 {
                         .ul-left {
                             text-align: center;
-                            margin    : 0;
-                            padding   : 0;
+                            margin: 0;
+                            padding: 0;
                         }
                     }
-
                     .col-sm-8 {
                         .ul-right {
                             text-align: center;
-                            margin    : 0;
-                            padding   : 0;
+                            margin: 0;
+                            padding: 0;
                         }
                     }
                 }
             }
-
             &__location {
-                margin-top : 390px;
-                text-align : center;
+                margin-top: 390px;
+                text-align: center;
                 margin-left: 0;
-                padding    : 0;
-
+                padding: 0;
                 .footer-title {
                     text-align: center;
                 }
-
                 &__total {
-                    //margin-left: 25%;
                     width: unset;
                 }
             }
         }
-
         &__bottom {
-            margin-top: 150px;
-            text-align: center;
-
+            margin-top: 200px;
             &__copyright {
-                display: none;
+                text-align: center;
             }
-
-            &__paymenmethod {
-                padding: 0;
+            &__paymentmethod {
+                margin-top: -120px ;
+                text-align: center;
             }
         }
     }
@@ -355,200 +328,136 @@
     }
 }
 
-@media (min-width: 541px) and (max-width: 767px) {
 
+////screen 540->767
+@media (min-width: 540px) and (max-width: 767px) {
     .banner {
         &__left {
             &__title {
-                font-size   : 18px;
-                padding-top : 80%;
-                padding-left: 48%;
+                font-size: 23px;
+                padding-top: 225px;
+                padding-left: 210px;
             }
 
             .btn-shop {
-                margin-top : 0;
+                margin-top: 0;
                 margin-left: 260px;
             }
         }
-
         &__right {
             &__top {
                 margin-top: 30px;
             }
         }
-
-    }
-
-    .slider {
-        &__main-slider {
-            &__title {
-                padding-top : 57%;
-                padding-left: 20px;
-            }
-
-            &__desc {
-                padding-top : 62%;
-                padding-left: 20px;
-                font-size   : 12px;
-
-            }
-
-            &__social {
-                padding-left: 20px;
-                padding-top : 70%;
-            }
-        }
-    }
-
-    .btn-add-cart {
-        margin-top: 115%;
     }
 }
 
-@media (min-width: 480px) and (max-width: 540px) {
+//screen 480->539
+@media (min-width: 480px) and (max-width: 539px) {
+    .main-menu {
+        &__logo {
+            margin-left: 30%;
+        }
+        
+    }
     .banner {
         &__left {
             &__title {
-                font-size   : 20px;
-                font-weight : 400;
-                font-family : pacifico;
-                padding-top : 230px;
-                padding-left: 230px;
+                font-size: 23px;
+                font-weight: 400;
+                font-family: pacifico;
+                padding-top: 210px;
+                padding-left: 200px;
             }
-
             .btn-shop {
                 margin-left: 300px;
             }
         }
-
         &__right {
             &__top {
                 &__name {
-                    padding-top : 100px;
+                    padding-top: 100px;
                     padding-left: 57px;
                 }
-
                 &__title {
                     padding-left: 57px;
-                    margin-top  : -10px;
+                    margin-top: -10px;
                 }
             }
-
             &__bottom {
                 &__name {
                     padding-left: 39px;
-                    padding-top : 200px;
+                    padding-top: 200px;
                 }
-
                 &__title {
-                    font-size     : 19px;
+                    font-size: 19px;
                     letter-spacing: 1px;
-                    font-weight   : 400;
-                    font-family   : main-font-bold;
-                    padding-left  : 39px;
-                    margin-top    : -10px;
+                    font-weight: 400;
+                    font-family: main-font-bold;
+                    padding-left: 39px;
+                    margin-top: -10px;
                 }
-
                 .btn-shop {
                     margin-left: 42px;
-                    margin-top : 3px;
+                    margin-top: 3px;
                 }
             }
         }
-    }
-
-    .slider {
-        &__main-slider {
-            &__title {
-                padding-top : 57%;
-                padding-left: 20px;
-            }
-
-            &__desc {
-                padding-top : 62%;
-                padding-left: 20px;
-                font-size   : 12px;
-
-            }
-
-            &__social {
-                padding-left: 20px;
-                padding-top : 75%;
-            }
-        }
-    }
-
-    .btn-add-cart {
-        margin-top: 115%;
     }
 }
 
+//screen 320->479
 @media (min-width: 320px) and (max-width: 479px) {
+    .main-menu {
+        &__logo {
+            margin-left: 20%;
+        }
+        &__icon {
+            &__heart {
+                margin-right: 5px;
+            }
+            &__cart {
+                margin-right: 15px;
+            }
+        }
+    }
     .banner {
         &__left {
             &__title {
-                font-size   : 14px;
-                padding-top : 150px;
+                font-size: 18px;
+                padding-top: 150px;
                 padding-left: 135px;
             }
-
             .btn-shop {
                 margin-left: 170px;
-                padding    : 5px 5px;
+                padding: 5px 5px;
             }
         }
-
         &__right {
             &__top {
                 &__name {
-                    padding-top : 80px;
+                    padding-top: 80px;
                     padding-left: 57px;
                 }
             }
-
             &__bottom {
                 &__name {
                     padding-left: 39px;
-                    padding-top : 150px;
+                    padding-top: 150px;
                 }
-
                 .btn-shop {
                     padding: 5px;
                 }
             }
         }
     }
-
-    .slider {
-        &__main-slider {
-            &__title {
-                //padding-top : 420px;
-                padding-top : 57%;
-                padding-left: 20px;
-            }
-
-            &__desc {
-                //padding-top : 440px;
-                padding-top : 62%;
-                padding-left: 20px;
-                font-size   : 12px;
-
-            }
-
-            &__social {
-                padding-left  : 20px;
-                //padding-top : 480px;
-                padding-top   : 83%;
-            }
+    .footer {
+        &__top {
+            &__about {
+                &__icon {
+                    margin-top: -10px;
+                }
         }
-    }
-
-    .menu a {
-        padding-right: 30px;
-    }
-
-    .btn-add-cart {
-        margin-top : 1%;
-        margin-left: 1%;
+      }
     }
 }

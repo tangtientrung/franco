@@ -21,7 +21,7 @@
     <script src="asset/js/main.js"></script>
     <!-- less-->
     <link rel="stylesheet/less" type="text/css" href="asset/less/style.less">
-    <script src="asset/less/less.js" type="text/javascript"></script>
+    <script src="asset/js/less.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -30,13 +30,13 @@
     <header class="header">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-sm-6 header__left">
-                    <div class="header__left__infor"><i class="fas fa-bookmark icon-header"></i>Wellcome to Franco - an e-Commerce PSD Template!</div>
+                <div class="col-xs-12 col-sm-7 header__left">
+                    <div class="header__left__logo"><i class="fas fa-bookmark icon-header"></i>Wellcome to Franco - an e-Commerce PSD Template!</div>
                 </div>
 
-                <div class="col-sm-6 header__center">
-                    <span class="header__center__left"><a href="" class="a-none"><i class="fas fa-cog icon-header"></i>Shop setting</a></span>
-                    <span class="header__center__right"><a href="" class="a-none"><i class="fas fa-lock icon-header"></i>Member Login</a></span>
+                <div class="col-xs-12 col-sm-5 header__center">
+                    <span class="header__center__left"><a href="" ><i class="fas fa-cog icon-header"></i>Shop setting</a></span>
+                    <span class="header__center__right"><a href="" ><i class="fas fa-lock icon-header"></i>Member Login</a></span>
                 </div>
             </div>
         </div>
@@ -52,14 +52,14 @@
             <!-- menu -->
             <div class="menu" id="myMenu">
                 <ul>
-                    <li class="li"><a href="" class="active a-none">HOME</a></li>
-                    <li class="li"><a href="" class="a-none">WOMEN</a></li>
-                    <li class="li"><a href="" class="a-none">MEN</a></li>
-                    <li class="li"><a href="" class="a-none">ABOUT US</a></li>
-                    <li class="li"><a href="" class="a-none">BLOG</a></li>
-                    <li class="li"><a href="" class="a-none">COLLECTIONS</a></li>
-                    <li class="li"><a href="" class="a-none">CONTACT</a></li>
-                    <li class="li"><a href="" class="a-none"><i class="fas fa-search"></i></a></li>
+                    <li class="li"><a href="" class="active">HOME</a></li>
+                    <li class="li"><a href="" >WOMEN</a></li>
+                    <li class="li"><a href="" >MEN</a></li>
+                    <li class="li"><a href="" >ABOUT US</a></li>
+                    <li class="li"><a href="" >BLOG</a></li>
+                    <li class="li"><a href="" >COLLECTIONS</a></li>
+                    <li class="li"><a href="" >CONTACT</a></li>
+                    <li class="li"><a href="" ><i class="fas fa-search"></i></a></li>
                 </ul>
             </div>
             <a href="javascript:void(0);" class="icon">
@@ -72,10 +72,10 @@
 
         <div class="main-menu__icon">
             <span class="main-menu__icon__heart">
-                <a href="" class="a-none"><i class="fas fa-heart"></i></a>
+                <a href=""><i class="fas fa-heart"></i></a>
             </span>
             <span class="main-menu__icon__cart">
-                <a href="" class="a-none"><i class="fas fa-shopping-cart"></i></a>
+                <a href=""><i class="fas fa-shopping-cart"></i></a>
             </span>
         </div>
 
@@ -105,8 +105,10 @@
                         <div class="col-sm-12 banner__right__top">
                             <img src="asset/image/ad2.png" alt="" class="banner__right__top__img" />
                             <div class="banner--position">
-                                <p class="banner__right__top__name">SMALL THING</p>
-                                <p class="banner__right__top__title">MAKE DIFFERENT</p>
+                                <a href="">
+                                    <p class="banner__right__top__name">SMALL THING</p>
+                                    <p class="banner__right__top__title">MAKE DIFFERENT</p>
+                                </a>
                             </div>
                         </div>
                         <!-- /top-->
@@ -144,8 +146,11 @@
                     <!-- item-->
                     <div class="col-xs-12 col-sm-6 col-md-3">
                         <div class="item">
-                            <a href="" class="a-none">
-                                <img src="asset/image/p1.jpg" alt="" class="product__image" />
+                            <a href=""  >
+                                <div class="product__image">
+                                    <img src="asset/image/p1.jpg" alt="" />
+                                    <button class="btn-add-cart">ADD TO CART</button>
+                                </div>
                                 <div class="product__infor">
                                     <div class="product__infor__name">Suspendisse id volutpat</div>
                                     <div class="product__infor__star">
@@ -161,15 +166,17 @@
                                     </div>
                                 </div>
                             </a>
-                            <button class="btn-add-cart">ADD TO CART</button>
                         </div>
                     </div>
                     <!-- /item-->
                     <!-- item-->
                     <div class="col-xs-12 col-sm-6 col-md-3">
                         <div class="item">
-                            <a href="" class="a-none">
-                                <img src="asset/image/p2.jpg" alt="" class="product__image" />
+                            <a href=""  >
+                                <div class="product__image">
+                                    <img src="asset/image/p2.jpg" alt="" />
+                                    <button class="btn-add-cart">ADD TO CART</button>
+                                </div>
                                 <div class="product__infor">
                                     <div class="product__infor__name">Lorem ipsum dolor</div>
                                     <div class="product__infor__star">
@@ -185,15 +192,17 @@
                                     </div>
                                 </div>
                             </a>
-                            <button class="btn-add-cart">ADD TO CART</button>
                         </div>
                     </div>
                     <!-- item-->
                     <!-- item-->
                     <div class="col-xs-12 col-sm-6 col-md-3">
                         <div class="item">
-                            <a href="" class="a-none">
-                                <img src="asset/image/p3.jpg" alt="" class="product__image" />
+                            <a href=""  >
+                                <div class="product__image">
+                                    <img src="asset/image/p3.jpg" alt="" />
+                                    <button class="btn-add-cart">ADD TO CART</button>
+                                </div>
                                 <div class="product__infor">
                                     <div class="product__infor__name">Proin sed nulla mi</div>
                                     <div class="product__infor__star">
@@ -208,15 +217,17 @@
                                     </div>
                                 </div>
                             </a>
-                            <button class="btn-add-cart">ADD TO CART</button>
                         </div>
                     </div>
                     <!-- /item-->
                     <!-- item -->
                     <div class="col-xs-12 col-sm-6 col-md-3">
                         <div class="item">
-                            <a href="" class="a-none">
-                                <img src="asset/image/p4.jpg" alt="" class="product__image" />
+                            <a href=""  >
+                                <div class="product__image">
+                                    <img src="asset/image/p4.jpg" alt="" />
+                                    <button class="btn-add-cart">ADD TO CART</button>
+                                </div>
                                 <div class="product__infor">
                                     <div class="product__infor__name">Aenean placerat</div>
                                     <div class="product__infor__star">
@@ -232,15 +243,17 @@
                                     </div>
                                 </div>
                             </a>
-                            <button class="btn-add-cart">ADD TO CART</button>
                         </div>
                     </div>
                     <!-- /item-->
                     <!-- item -->
                     <div class="col-xs-12 col-sm-6 col-md-3">
                         <div class="item">
-                            <a href="" class="a-none">
-                                <img src="asset/image/p5.jpg" alt="" class="product__image" />
+                            <a href=""  >
+                                <div class="product__image">
+                                    <img src="asset/image/p5.jpg" alt="" />
+                                    <button class="btn-add-cart">ADD TO CART</button>
+                                </div>
                                 <div class="product__infor">
                                     <div class="product__infor__name">Suspendisse id volutpat</div>
                                     <div class="product__infor__star">
@@ -256,15 +269,17 @@
                                     </div>
                                 </div>
                             </a>
-                            <button class="btn-add-cart">ADD TO CART</button>
                         </div>
                     </div>
                     <!-- /item -->
                     <!-- item -->
                     <div class="col-xs-12 col-sm-6 col-md-3">
                         <div class="item">
-                            <a href="" class="a-none">
-                                <img src="asset/image/p6.jpg" alt="" class="product__image" />
+                            <a href=""  >
+                                <div class="product__image">
+                                    <img src="asset/image/p6.jpg" alt="" />
+                                    <button class="btn-add-cart">ADD TO CART</button>
+                                </div>
                                 <div class="product__infor">
                                     <div class="product__infor__name">Lorem ipsum dolor</div>
                                     <div class="product__infor__star">
@@ -280,15 +295,17 @@
                                     </div>
                                 </div>
                             </a>
-                            <button class="btn-add-cart">ADD TO CART</button>
                         </div>
                     </div>
                     <!-- /item -->
                     <!-- item -->
                     <div class="col-xs-12 col-sm-6 col-md-3">
                         <div class="item">
-                            <a href="" class="a-none">
-                                <img src="asset/image/p7.jpg" alt="" class="product__image" />
+                            <a href=""  >
+                                <div class="product__image">
+                                    <img src="asset/image/p7.jpg" alt="" />
+                                    <button class="btn-add-cart">ADD TO CART</button>
+                                </div>
                                 <div class="product__infor">
                                     <div class="product__infor__name">Proin sed nulla mi</div>
                                     <div class="product__infor__star">
@@ -303,15 +320,17 @@
                                     </div>
                                 </div>
                             </a>
-                            <button class="btn-add-cart">ADD TO CART</button>
                         </div>
                     </div>
                     <!-- /item -->
                     <!-- item -->
                     <div class="col-xs-12 col-sm-6 col-md-3">
                         <div class="item">
-                            <a href="" class="a-none">
-                                <img src="asset/image/p8.jpg" alt="" class="product__image" />
+                            <a href=""  >
+                                <div class="product__image">
+                                    <img src="asset/image/p8.jpg" alt="" />
+                                    <button class="btn-add-cart">ADD TO CART</button>
+                                </div>
                                 <div class="product__infor">
                                     <div class="product__infor__name">Aenean placerat</div>
                                     <div class="product__infor__star">
@@ -327,7 +346,6 @@
                                     </div>
                                 </div>
                             </a>
-                            <button class="btn-add-cart">ADD TO CART</button>
                         </div>
                     </div>
                     <!-- /item -->
@@ -343,7 +361,7 @@
             <!-- introduce -->
             <header class="introduce">
                 <div class="introduce--center">
-                    <p class="introduce__article">LASTEST</p>
+                    <p class="introduce__article">LATEST</p>
                     <p class="introduce__title">NEWS & EVENTS</p>
                     <p class="introduce__underline"></p>
                 </div>
@@ -354,138 +372,162 @@
             <section class="slider__main-slider">
                 <div class="row">
                     <div class="owl-carousel owl-theme">
-                        <div class="item">
-                            <a href="#" class="a-none">
+                        <div class="item-slider">
+                            <a href="#"  >
                                 <img src="asset/image/s1.jpg" class="slider__main-slider__image" alt="">
-                                <p class="slider__main-slider__title">In commodo dolor vitae</p>
-                                <p class="slider__main-slider__desc">Aliquam tempor sagittis neque, vel aliquam risus
-                                    consectetur vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris.</p>
-                                <div class="slider__main-slider__social">
-                                    <span class="slider__main-slider__social__comment">
-                                        <i class="far fa-comment"></i><span>_12</span>
-                                    </span>
-                                    <i class="far fa-heart"></i><span>_0</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <div class="slider__main-slider__item">
-                                <a href="#" class="a-none">
-                                    <img src="asset/image/s2.jpg" alt="" class="slider__main-slider__image">
-                                    <p class="slider__main-slider__title">Vivamus non dignissim elit</p>
-                                    <p class="slider__main-slider__desc">Aliquam tempor sagittis neque, vel aliquam
-                                        risus
+                                <div class="slider__main-slider__infor">
+                                    <p class="slider__main-slider__title">In commodo dolor vitae</p>
+                                    <p class="slider__main-slider__desc">Aliquam tempor sagittis neque, vel aliquam risus
                                         consectetur vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris.</p>
+                                    <div class="slider__main-slider__underline"></div>
                                     <div class="slider__main-slider__social">
                                         <span class="slider__main-slider__social__comment">
                                             <i class="far fa-comment"></i><span>_12</span>
                                         </span>
                                         <i class="far fa-heart"></i><span>_0</span>
                                     </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item-slider">
+                            <div class="slider__main-slider__item">
+                                <a href="#"  >
+                                    <img src="asset/image/s2.jpg" alt="" class="slider__main-slider__image">
+                                    <div class="slider__main-slider__infor">
+                                        <p class="slider__main-slider__title">Vivamus non dignissim elit</p>
+                                        <p class="slider__main-slider__desc">Aliquam tempor sagittis neque, vel aliquam
+                                            risus consectetur vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris.</p>
+                                        <div class="slider__main-slider__underline"></div>
+                                        <div class="slider__main-slider__social">
+                                            <span class="slider__main-slider__social__comment">
+                                                <i class="far fa-comment"></i><span>_12</span>
+                                            </span>
+                                            <i class="far fa-heart"></i><span>_0</span>
+                                        </div>
+                                    </div>
                                 </a>
                             </div>
                         </div>
-                        <div class="item">
-                            <a href="#" class="a-none">
+                        <div class="item-slider">
+                            <a href="#"  >
                                 <img src="asset/image/s3.jpg" alt="" class="slider__main-slider__image">
-                                <p class="slider__main-slider__title">Ut lacinia erat ut diam volutpat</p>
-                                <p class="slider__main-slider__desc">Aliquam tempor sagittis neque, vel aliquam risus
-                                    consectetur vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris.</p>
-                                <div class="slider__main-slider__social">
-                                    <span class="slider__main-slider__social__comment">
-                                        <i class="far fa-comment"></i><span>_12</span>
-                                    </span>
-                                    <i class="far fa-heart"></i><span>_0</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <a href="#" class="a-none">
-                                <img src="asset/image/s1.jpg" class="slider__main-slider__image" alt="">
-                                <p class="slider__main-slider__title">In commodo dolor vitae</p>
-                                <p class="slider__main-slider__desc">Aliquam tempor sagittis neque, vel aliquam risus
-                                    consectetur vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris.</p>
-                                <div class="slider__main-slider__social">
-                                    <span class="slider__main-slider__social__comment">
-                                        <i class="far fa-comment"></i><span>_12</span>
-                                    </span>
-                                    <i class="far fa-heart"></i><span>_0</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <div class="slider__main-slider__item">
-                                <a href="#" class="a-none">
-                                    <img src="asset/image/s2.jpg" alt="" class="slider__main-slider__image">
-                                    <p class="slider__main-slider__title">Vivamus non dignissim elit</p>
-                                    <p class="slider__main-slider__desc">Aliquam tempor sagittis neque, vel aliquam
-                                        risus
+                                <div class="slider__main-slider__infor">
+                                    <p class="slider__main-slider__title">Ut lacinia erat ut diam volutpat</p>
+                                    <p class="slider__main-slider__desc">Aliquam tempor sagittis neque, vel aliquam risus
                                         consectetur vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris.</p>
+                                    <div class="slider__main-slider__underline"></div>
                                     <div class="slider__main-slider__social">
                                         <span class="slider__main-slider__social__comment">
                                             <i class="far fa-comment"></i><span>_12</span>
                                         </span>
                                         <i class="far fa-heart"></i><span>_0</span>
                                     </div>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <a href="#" class="a-none">
-                                <img src="asset/image/s3.jpg" alt="" class="slider__main-slider__image">
-                                <p class="slider__main-slider__title">Ut lacinia erat ut diam volutpat</p>
-                                <p class="slider__main-slider__desc">Aliquam tempor sagittis neque, vel aliquam risus
-                                    consectetur vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris.</p>
-                                <div class="slider__main-slider__social">
-                                    <span class="slider__main-slider__social__comment">
-                                        <i class="far fa-comment"></i><span>_12</span>
-                                    </span>
-                                    <i class="far fa-heart"></i><span>_0</span>
                                 </div>
                             </a>
                         </div>
-                        <div class="item">
-                            <a href="#" class="a-none">
+                        <div class="item-slider">
+                            <a href="#"  >
                                 <img src="asset/image/s1.jpg" class="slider__main-slider__image" alt="">
-                                <p class="slider__main-slider__title">In commodo dolor vitae</p>
-                                <p class="slider__main-slider__desc">Aliquam tempor sagittis neque, vel aliquam risus
-                                    consectetur vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris.</p>
-                                <div class="slider__main-slider__social">
-                                    <span class="slider__main-slider__social__comment">
-                                        <i class="far fa-comment"></i><span>_12</span>
-                                    </span>
-                                    <i class="far fa-heart"></i><span>_0</span>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="item">
-                            <div class="slider__main-slider__item">
-                                <a href="#" class="a-none">
-                                    <img src="asset/image/s2.jpg" alt="" class="slider__main-slider__image">
-                                    <p class="slider__main-slider__title">Vivamus non dignissim elit</p>
-                                    <p class="slider__main-slider__desc">Aliquam tempor sagittis neque, vel aliquam
-                                        risus
+                                <div class="slider__main-slider__infor">
+                                    <p class="slider__main-slider__title">In commodo dolor vitae</p>
+                                    <p class="slider__main-slider__desc">Aliquam tempor sagittis neque, vel aliquam risus
                                         consectetur vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris.</p>
+                                    <div class="slider__main-slider__underline"></div>
                                     <div class="slider__main-slider__social">
                                         <span class="slider__main-slider__social__comment">
                                             <i class="far fa-comment"></i><span>_12</span>
                                         </span>
                                         <i class="far fa-heart"></i><span>_0</span>
                                     </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item-slider">
+                            <div class="slider__main-slider__item">
+                                <a href="#"  >
+                                    <img src="asset/image/s2.jpg" alt="" class="slider__main-slider__image">
+                                    <div class="slider__main-slider__infor">
+                                        <p class="slider__main-slider__title">Vivamus non dignissim elit</p>
+                                        <p class="slider__main-slider__desc">Aliquam tempor sagittis neque, vel aliquam
+                                            risus consectetur vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris.</p>
+                                        <div class="slider__main-slider__underline"></div>
+                                        <div class="slider__main-slider__social">
+                                            <span class="slider__main-slider__social__comment">
+                                                <i class="far fa-comment"></i><span>_12</span>
+                                            </span>
+                                            <i class="far fa-heart"></i><span>_0</span>
+                                        </div>
+                                    </div>
                                 </a>
                             </div>
                         </div>
-                        <div class="item">
-                            <a href="#" class="a-none">
+                        <div class="item-slider">
+                            <a href="#"  >
                                 <img src="asset/image/s3.jpg" alt="" class="slider__main-slider__image">
-                                <p class="slider__main-slider__title">Ut lacinia erat ut diam volutpat</p>
-                                <p class="slider__main-slider__desc">Aliquam tempor sagittis neque, vel aliquam risus
-                                    consectetur vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris.</p>
-                                <div class="slider__main-slider__social">
-                                    <span class="slider__main-slider__social__comment">
-                                        <i class="far fa-comment"></i><span>_12</span>
-                                    </span>
-                                    <i class="far fa-heart"></i><span>_0</span>
+                                <div class="slider__main-slider__infor">
+                                    <p class="slider__main-slider__title">Ut lacinia erat ut diam volutpat</p>
+                                    <p class="slider__main-slider__desc">Aliquam tempor sagittis neque, vel aliquam risus
+                                        consectetur vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris.</p>
+                                    <div class="slider__main-slider__underline"></div>
+                                    <div class="slider__main-slider__social">
+                                        <span class="slider__main-slider__social__comment">
+                                            <i class="far fa-comment"></i><span>_12</span>
+                                        </span>
+                                        <i class="far fa-heart"></i><span>_0</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item-slider">
+                            <a href="#"  >
+                                <img src="asset/image/s1.jpg" class="slider__main-slider__image" alt="">
+                                <div class="slider__main-slider__infor">
+                                    <p class="slider__main-slider__title">In commodo dolor vitae</p>
+                                    <p class="slider__main-slider__desc">Aliquam tempor sagittis neque, vel aliquam risus
+                                        consectetur vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris.</p>
+                                    <div class="slider__main-slider__underline"></div>
+                                    <div class="slider__main-slider__social">
+                                        <span class="slider__main-slider__social__comment">
+                                            <i class="far fa-comment"></i><span>_12</span>
+                                        </span>
+                                        <i class="far fa-heart"></i><span>_0</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="item-slider">
+                            <div class="slider__main-slider__item">
+                                <a href="#"  >
+                                    <img src="asset/image/s2.jpg" alt="" class="slider__main-slider__image">
+                                    <div class="slider__main-slider__infor">
+                                        <p class="slider__main-slider__title">Vivamus non dignissim elit</p>
+                                        <p class="slider__main-slider__desc">Aliquam tempor sagittis neque, vel aliquam
+                                            risus consectetur vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris.</p>
+                                        <div class="slider__main-slider__underline"></div>
+                                        <div class="slider__main-slider__social">
+                                            <span class="slider__main-slider__social__comment">
+                                                <i class="far fa-comment"></i><span>_12</span>
+                                            </span>
+                                            <i class="far fa-heart"></i><span>_0</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item-slider">
+                            <a href="#"  >
+                                <img src="asset/image/s3.jpg" alt="" class="slider__main-slider__image">
+                                <div class="slider__main-slider__infor">
+                                    <p class="slider__main-slider__title">Ut lacinia erat ut diam volutpat</p>
+                                    <p class="slider__main-slider__desc">Aliquam tempor sagittis neque, vel aliquam risus
+                                        consectetur vel. Aenean hendrerit, elit a lacinia suscipit, orci mauris.</p>
+                                    <div class="slider__main-slider__underline"></div>
+                                    <div class="slider__main-slider__social">
+                                        <span class="slider__main-slider__social__comment">
+                                            <i class="far fa-comment"></i><span>_12</span>
+                                        </span>
+                                        <i class="far fa-heart"></i><span>_0</span>
+                                    </div>
                                 </div>
                             </a>
                         </div>
@@ -554,16 +596,16 @@
                             <div class="footer__top__location__total">
                                 <div class="footer__top__location__infor">
                                     <span><i class="far fa-map"></i></span>
-                                    <span class="footer__top__location__detail">500 Hennessy Road Causeway Bay, Hong
-                                        Kong</span>
+                                    <span class="footer__top__location__detail"><a href="" class="a">500 Hennessy Road Causeway Bay, Hong
+                                        Kong</a></span>
                                 </div>
                                 <div class="footer__top__location__infor">
                                     <span><i class="fas fa-phone-alt"></i></span>
-                                    <span class="footer__top__location__detail">+ 123456789</span>
+                                    <span class="footer__top__location__detail"><a href="" class="a">+ 123456789</a></span>
                                 </div>
                                 <div class="footer__top__location__infor">
                                     <i class="far fa-envelope"></i>
-                                    <span class="footer__top__location__detail">contact@yourdomain.com</span>
+                                    <span class="footer__top__location__detail"><a href="" class="a">contact@yourdomain.com</a></span>
                                 </div>
                             </div>
                         </div>
@@ -584,7 +626,7 @@
                 <div class="footer__bottom">
                     <div class="col-sm-8 footer__bottom__copyright">
                         © Copyright 2015 & Made with <span class="icon-heart-red"><i class="fas fa-heart"></i></span> by
-                        <span class="footer__bottom__copyright__company">ArrowHitech.</span>
+                        <span class="footer__bottom__copyright__company"><a href="">ArrowHitech.</a></span>
                     </div>
                     <div class="col-sm-4 footer__bottom__paymentmethod">
                         <a class="a" href=""><i class="fab fa-cc-visa"></i></a>
