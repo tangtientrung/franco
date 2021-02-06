@@ -47,7 +47,7 @@
 @anone-color: #525252;
 @anone-hover-color: #000;
 @a-color: #888;
-@a-hover-color: #888;
+@a-hover-color: #f7f7f7;
 @iconheart-color: red;
 @star-yellow-color: #f8ba04;
 @star-black-color: #d1d1d1;
@@ -55,7 +55,7 @@
 @coat-bg-color: #000;
 @main-slider-bg-color: #fff;
 @slider_underline-color: #ededed;
-
+@main-slider_title-color: #8262b5;
 /* 1.2 Import */
 @import '_font.less';
 @import '_reuse.less';
@@ -160,14 +160,14 @@ a:hover {
 }
 
 .menu ul li {
-    float          : left;
-    display        : block;
-    text-align     : center;
+    float: left;
+    display: block;
+    text-align: center;
     text-decoration: none;
-    color          : @menu-color;
-    line-height    : 80px;
-    font-weight    : 700;
-    padding-right  : 54px;
+    color: @menu-color;
+    line-height: 80px;
+    font-weight: 700;
+    padding-right: 54px;
 }
 
 .menu a:hover {
@@ -207,7 +207,7 @@ a:hover {
     .btn-shop {
         margin-left: 550px;
     }
-  }
+    }
     &__right {
         &__top {
             &__img {
@@ -339,6 +339,7 @@ a:hover {
         &--center {
             margin-top: 75px;
             text-align: center;
+            margin-bottom: 50px;
         }
         &__article {
             font-size: 12px;
@@ -355,53 +356,65 @@ a:hover {
         }
     }
     &__main-slider {
-        margin-top: 12px;
         margin-bottom: 57px;
-      &__infor {
-          background-color: @main-slider-bg-color;
-          width: 100%;
-          height: 100%;
-      }
-      .item-slider {
-          margin: 35px 10px 15px 7px;
-      }
-      &__image {
-          width: 100%;
-      }
-      &__title {
-          font-size: 16px;
-          line-height: 20px;
-          color: @introduce-title-color;
-          font-weight: 400;
-          font-family: main-font;
-          padding-top: 15px;
-          padding-left: 25px;
-      }
-      &__desc {
-          padding-top: 5px;
-          padding-left: 25px;
-          font-size: 14px;
-          line-height: 22px;
-          color: @introduce-desc-color;
-          font-weight: 400;
-          font-family: main-font;
-          padding-bottom: 8px;
-      }
-      &__underline {
-          width: 100%;
-          height: 1px;
-          background-color: @slider_underline-color;
-          margin-top: 5px;
-      }
-      &__social {
-          padding-left: 25px;
-          padding-top: 15px;
-          padding-bottom: 20px;
-          &__comment {
-              padding-right: 30px;
-          }
-      }
-  }
+        &__infor {
+            background-color: @main-slider-bg-color;
+            width: 100%;
+            height: 100%;
+        }
+        .item-slider {
+            margin: 0px 10px 15px 10px;
+        }
+        &__image {
+            &__main-image {
+                position: relative;
+            }
+            &__date {
+                width: unset !important;
+                position: absolute;
+                top: 0;
+                left: 0;
+                margin-top: 20px;
+                margin-left: 30px;
+            }
+        }
+        &__title {
+            font-size: 16px;
+            line-height: 20px;
+            color: @introduce-title-color;
+            font-weight: 400;
+            font-family: main-font;
+            padding-top: 15px;
+            padding-left: 25px;
+        }
+        &__title:hover {
+            color: @main-slider_title-color;
+        }
+        &__desc {
+            padding-top: 5px;
+            padding-left: 25px;
+            font-size: 14px;
+            line-height: 22px;
+            color: @introduce-desc-color;
+            font-weight: 400;
+            font-family: main-font;
+            padding-bottom: 8px;
+        }
+        &__underline {
+            width: 100%;
+            height: 1px;
+            background-color: @slider_underline-color;
+            margin-top: 5px;
+        }
+        &__social {
+            padding-left: 25px;
+            padding-top: 15px;
+            padding-bottom: 20px;
+            &__comment {
+                padding-right: 30px;
+            }
+        }
+    }
 }
 
 .owl-theme .owl-dots .owl-dot.active span {
@@ -458,37 +471,31 @@ a:hover {
                     margin-right: 30px;
                 }
             }
-    }
-    &__location {
-        &__total {
-            width: 100%;
-            font-size: 14px;
-            line-height: 34px;
-            color: @footer-total-color;
-            font-weight: 400;
-            padding-top: 21px;
         }
-        &__detail {
-            padding-left: 5px;
+        &__location {
+            &__total {
+                width: 100%;
+                font-size: 14px;
+                line-height: 34px;
+                color: @footer-total-color;
+                font-weight: 400;
+                padding-top: 21px;
+            }
+            &__detail {
+                padding-left: 5px;
+            }
+        }
+        &__navigation {
+            ul.ul-left {
+                margin-left: -39px;
+                margin-top: 20px;
+            }
+            ul.ul-right {
+                margin-left: -10px;
+                margin-top: 20px;
+            }
         }
     }
-      &__navigation {
-          .row {
-              .col-sm-4 {
-                  .ul-left {
-                      margin-left: -41px;
-                      padding-top: 21px;
-                  }
-              }
-              .col-sm-8 {
-                  .ul-right {
-                      margin-left: -7px;
-                      padding-top: 21px;
-                  }
-              }
-      }
-    }
-  }
     &__bottom {
         height: 70px;
         line-height: 70px;
@@ -498,17 +505,16 @@ a:hover {
                 a {
                     color: @footer-company-color;
                 }
-              
             }
         }
         &__paymentmethod {
             text-align: right;
-                a {
-                    i {
-                        font-size: 20px;
-                        margin-left: 5px;
-                    }
+            a {
+                i {
+                    font-size: 20px;
+                    margin-left: 5px;
                 }
+            }
         }
     }
 }

@@ -6,12 +6,12 @@
             &__left {
                 padding-right: 20px;
             }
-        
             &__right {
                 padding-right: 0px;
             }
         }
     }
+
     .menu {
         padding-left: 250px;
     }
@@ -20,18 +20,18 @@
     }
     .main-menu {
         &__logo {
-          position: absolute;
-          top: 0;
-          padding-top: 20px;
-          margin-left: 30px;
+            position: absolute;
+            top: 0;
+            padding-top: 20px;
+            margin-left: 30px;
         }
         &__icon {
             &__heart {
                 margin-right: 20px;
             }
         }
-      }
-}
+    }
+    }
 
 //screen < 1199
 @media (max-width: 1199px) {
@@ -144,6 +144,18 @@
             }
         }
     }
+    .footer {
+        &__top {
+            &__navigation {
+                ul.ul-left {
+                    margin-left: -30px;
+                }
+                ul.ul-right {
+                    margin-left: -70px;
+                }
+            }
+        }
+    }
 }
 
 //screen 768->991
@@ -238,10 +250,12 @@
         text-align: center;
         margin: 0;
         padding: unset;
+        line-height: 50px;
     }
     &__center {
         text-align: center;
         margin: 0;
+        line-height: 50px;
     }
 }
 
@@ -260,6 +274,14 @@
         
     }
 
+    .slider {
+        &__main-slider {
+            .item-slider {
+                margin: 0px 15px 15px 15px;
+            }
+        }
+    }
+
     .footer-middle-underline {
         display: none;
     }
@@ -268,6 +290,7 @@
         &__top {
             &__about {
                 text-align: center;
+                margin-top: -30px;
                 &__content {
                     text-align: center;
                     width: 100%;
@@ -279,25 +302,16 @@
             &__navigation {
                 margin-top: 30px;
                 text-align: center;
-                .row {
-                    .col-sm-4 {
-                        .ul-left {
-                            text-align: center;
-                            margin: 0;
-                            padding: 0;
-                        }
-                    }
-                    .col-sm-8 {
-                        .ul-right {
-                            text-align: center;
-                            margin: 0;
-                            padding: 0;
-                        }
-                    }
+                ul.ul-left {
+                    margin-left: -30px;
+                }
+                ul.ul-right {
+                    margin-left: -30px;
+                    margin-top: -10px;
                 }
             }
             &__location {
-                margin-top: 390px;
+                margin-top: 30px;
                 text-align: center;
                 margin-left: 0;
                 padding: 0;
@@ -310,12 +324,12 @@
             }
         }
         &__bottom {
-            margin-top: 200px;
+            margin-top: 180px;
             &__copyright {
                 text-align: center;
             }
             &__paymentmethod {
-                margin-top: -120px ;
+                margin-top: -110px ;
                 text-align: center;
             }
         }
@@ -331,6 +345,12 @@
 
 ////screen 540->767
 @media (min-width: 540px) and (max-width: 767px) {
+    .main-menu {
+        &__logo {
+            margin-left: 30%;
+        }
+        
+    }
     .banner {
         &__left {
             &__title {
@@ -408,6 +428,15 @@
 
 //screen 320->479
 @media (min-width: 320px) and (max-width: 479px) {
+    .header {
+        font-size: 12px;
+        &__left {
+            line-height: 35px;
+        }
+        &__center {
+            line-height: 35px;
+        }
+    }
     .main-menu {
         &__logo {
             margin-left: 20%;
