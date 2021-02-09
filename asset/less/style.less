@@ -56,6 +56,9 @@
 @main-slider-bg-color: #fff;
 @slider_underline-color: #ededed;
 @main-slider_title-color: #8262b5;
+@slider-date-bg-color: #a1d1dd;
+@slider-frame-border-color: #fefefe;
+@slider-time-color: #ffffff;
 /* 1.2 Import */
 @import '_font.less';
 @import '_reuse.less';
@@ -369,13 +372,38 @@ a:hover {
             &__main-image {
                 position: relative;
             }
-            &__date {
-                width: unset !important;
+            .slider-date {
+                width: 60px;
+                height: 60px;
+                background-color: @slider-date-bg-color;
                 position: absolute;
                 top: 0;
-                left: 0;
                 margin-top: 20px;
-                margin-left: 30px;
+                margin-left: 23px;
+                &__frame {
+                    width: 50px;
+                    height: 50px;
+                    background-color: @slider-date-bg-color;
+                    border: 1px solid @slider-frame-border-color;
+                    margin-top: 5px;
+                    margin-left: 5px;
+                }
+                &__month {
+                    font-size: 14px;
+                    color: @slider-time-color;
+                    font-weight: 200;
+                    font-family: main-font;
+                    text-align: center;
+                    margin-top: -42px;
+                }
+                &__date {
+                    font-size: 14px;
+                    color: @slider-time-color;
+                    font-weight: 800;
+                    font-family: main-font;
+                    text-align: center;
+                    margin-top: -12px;
+                }
             }
         }
         &__title {
